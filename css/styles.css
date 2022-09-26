@@ -473,6 +473,17 @@ ul {
 .proj-item > .link {
     display: block;
 }
+.proj-item .thumb {
+    position: relative;
+}
+.proj-item > .link .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: tomato;
+}
 
 .proj-item > .link:hover,
 .proj-item > .link:focus {
@@ -502,7 +513,7 @@ ul {
     color: var(--sec-text-color);
 }
 
-/* Модальное окно */
+/*! Модальное окно */
 .backdrop {
     position: fixed;
     top: 0;

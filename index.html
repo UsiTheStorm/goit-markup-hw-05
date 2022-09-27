@@ -68,7 +68,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Преимущества -->
@@ -426,16 +426,17 @@
     </footer>
 
     <!-- Модальное окно -->
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal-inner">
-          <div class="close-icon-container">
+          <button class="close-icon-container" data-modal-close>
             <svg class="close-icon">
               <use href="./images/icons.svg#icon-modal-close"></use>
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

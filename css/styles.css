@@ -334,11 +334,13 @@ ul {
 }
 
 .net-icon-container:hover,
-.net-icon-container:focus,
-.net-icon-container:hover .net-icon,
-.net-icon-container:hover .net-icon {
+.net-icon-container:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--accent-color);
+    
+}
+.net-icon-container:focus .net-icon,
+.net-icon-container:hover .net-icon {
     fill: #fff;
 }
 .net-icon {

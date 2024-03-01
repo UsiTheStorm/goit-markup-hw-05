@@ -44,8 +44,7 @@ a {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 .section {
     padding-top: 94px;
@@ -105,6 +104,7 @@ a {
 .nav-links {
     display: flex;
     margin-left: auto;
+    gap: 50px;
 }
 
 .navbar-link {
@@ -119,6 +119,11 @@ a {
     color: var(--prim-text-color);
 }
 
+.active {
+    position: relative;
+    overflow: hidden;
+  }
+
 .navbar-link.active::after {
     content: '';
     position: absolute;
@@ -131,9 +136,9 @@ a {
     border-radius: 2px;
 }
 
-.nav-links .item:not(:last-child) {
+/* .nav-links .item:not(:last-child) {
     margin-right: 50px;
-}
+} */
 .navbar-link:hover,
 .navbar-link:focus,
 .navbar-contact:hover .nav-icon,
